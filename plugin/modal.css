@@ -1,0 +1,201 @@
+/*element style for the overlays*/
+#overlay{
+    position: absolute;
+    z-index: 5000;
+    background-color: #808080;
+    filter: alpha(opacity=60);
+    background: rgba(128, 128, 128, 0.6);
+    display: block;
+}
+
+#innerOverlay{
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+/*modal box settings*/
+#modalBox{
+    position: absolute;
+    z-index: 6000;
+    font-size:12px;
+    background-color: white;
+    top: 100px;
+    left: 400px;
+}
+
+#modalBoxShadow{
+    background-color: #006580;
+    -ms-filter: "progid:DXImageTransform.Microsoft.blur(pixelradius=2.0, makeShadow=true, ShadowOpacity=0.5)";
+    filter: progid:DXImageTransform.Microsoft.blur(pixelradius=2.0, makeShadow=true, ShadowOpacity=0.5);
+    position:absolute;
+    display: none;
+}
+
+#modalBox span.configuring {
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	top: 30%;
+	left: 35%;
+}
+
+    #modalContent{
+        font-family: Arial;
+        box-shadow: 4px 12px 2px #666;
+        -moz-box-shadow: 4px 12px 2px #666;
+        -webkit-box-shadow: 4px 12px 2px #666;
+        background-color: white;
+        display: none;
+    }
+
+    #modalContent #modalContentHeader p{
+        height: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #595959;
+        background-color: #d6d6d6;
+        padding: 7px;
+    }
+
+    #modalContent #modalContentForm{
+        padding: 7px 7px 40px;
+        background-color: #ffffff;
+    }
+
+    #modalContent #modalContentForm fieldset{
+        padding-top: 4px;
+    }
+
+    #modalContent #modalContentForm fieldset.withBorder{
+        border: 1px solid #A3A3A3;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+    }
+
+    #modalContent #modalContentForm label{
+        float:left;
+        width: 150px;
+        margin-right: 2px;
+        font-weight: bold;
+        white-space: nowrap;
+        padding-right: 5px;
+    }
+
+    #modalContent #modalContentForm p.formLegend{
+        font-weight: bold;
+        white-space: pre-wrap;
+        margin-bottom: 5px;
+        color: #7D7D7D;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    #modalContent #modalContentForm fieldset ol{
+        list-style: none;
+    }
+
+    #modalContent #modalContentForm fieldset ol li{
+        padding: 5px 5px 10px;
+    }
+
+    #modalContent #modalContentForm fieldset ol li.formHeader{
+        background-image: url(../images/columnheader_bg.png);
+        background-repeat: repeat-x;
+        background-color: #e2e2e2;
+        font-weight: bold;
+        color: #595959;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #modalContent #modalContentForm fieldset ol li#availRange{
+        padding: 2px 20px 10px;
+    }
+
+    #modalContent #modalContentForm fieldset ol li * span{
+        padding: 3px;
+    }
+
+    #modalContent #modalContentForm fieldset ol li div{
+        /*min-height: 20px;
+        display: block;*/
+    }
+
+    #modalContent #modalContentForm  .listBox {
+        border: 1px solid #528B8B;
+        width: 450px;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    
+    #modalContent #modalContentForm #courseName {
+    	border: none;
+    	min-height: 50px;
+    	max-hieght: 50px;
+    	overflow: auto;
+    }
+
+    #modalContent #modalContentForm  .listBox p img {
+        vertical-align: middle;
+    }
+
+    #modalContent #modalContentForm  .listBox thead tr td {
+        border: 1px solid #bbbbbb;
+        border-collapse: collapse;
+        background-image: url(../images/columnheader_bg.png);
+        background-repeat: repeat-x;
+        background-color: #e2e2e2;
+        text-decoration: underline;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    #modalContent #modalContentForm  .listBox tbody tr td,
+    #userCourseList tbody tr td{
+        padding: 5px 8px;
+        vertical-align: text-bottom;
+        word-spacing: 2px;
+        min-height: 20px;
+        border-bottom: 1px;
+    }
+
+    #modalContent #modalContentForm  .listBox tbody tr.selected{
+        background-color: #999999;
+    }
+
+
+    #modalContent #modalContentForm .required{
+        padding: 0px;
+        color: red;
+    }
+
+    #modalContent #modalMessage {
+        display: none;
+        float: left;
+        font-weight: bold;
+        vertical-align: text-bottom;
+        padding: 4px;
+        overflow: auto;
+        padding: 10px;
+    }
+
+    #modalContent #modalMessage img{
+        vertical-align: middle;
+    }
+
+    #modalContent #modalFooter {
+        clear: both;
+        height: 30px;
+        background-color: #F0F0F0;
+        border-top: 1px solid #CCCCCC;
+    }
+
+    #modalContent #modalFooter fieldset{
+        vertical-align: middle;
+        padding: 5px 10px;
+    }
+
