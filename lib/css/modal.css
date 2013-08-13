@@ -1,0 +1,60 @@
+/* ==|== modal styles =====================================================
+   Author: Kianosh Pourian
+   Description: Styles to contain the modal box information
+   ======================================================================== */
+.spinner-block, .modal-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.overlay-screen {
+  position: absolute;
+  z-index: 5000;
+  background-color: rgba(128, 128, 128, 0.6);
+  filter: alpha(opacity=60);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  z-index: 5001;
+  position: relative;
+}
+
+.modal-block {
+  font-size: 12px;
+  background-color: white;
+  min-width: 200px;
+  min-height: 100px;
+  z-index: 5001;
+}
+
+.modal-shadow {
+  -moz-box-shadow: 0 0 0 0 #cccccc;
+  -webkit-box-shadow: 0 0 0 0 #cccccc;
+  box-shadow: 0 0 0 0 #cccccc;
+}
+
+.modal-border {
+  border: 1px solid #676767;
+}
+
+.vertical-offset {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5001;
+}
+
+/* ==|== End modal styles ================================================= */
