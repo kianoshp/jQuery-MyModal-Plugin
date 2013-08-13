@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ==============================================
 VERSION----> 1.0.0
 CREATED BY-> Kianosh Pourian
@@ -75,3 +76,9 @@ Feel free to use this as needed and give credit where credit is due. Thanks!!
 EMAIL:
 kianoshp@gmail.com
 
+=======
+jQuery-MyModal-Plugin
+=====================
+
+New plugin for jQuery to open a modal box and also an alert box. 
+>>>>>>> 7c2701583348414c38b6d118c2d96e1b19b689ab
