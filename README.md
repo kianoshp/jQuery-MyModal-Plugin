@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ==============================================
 VERSION----> 1.0.0
 CREATED BY-> Kianosh Pourian
@@ -44,13 +43,17 @@ FILES USED AND THEIR PROPER DIRECTORIES:
 ===============================================
 
 ~~~~~~~~~~~README FILE~~~~~~~~~~~~~~
-README.txt
+README.md
 
 
 ~~~~~~~~~~FOLDERS~~~~~~~~~~~~~~~~~~~
 plugin
-html5-css3
-
+lib
+	css
+	images
+	js
+		vendors
+	sass
 ===============================================
 PLAYING THIS PLUGIN:
 ===============================================
@@ -65,6 +68,7 @@ KNOWN ISSUES OR BUGS:
 VERSION HISTORY
 ===============================================
 1.0.0	initiated	Kianosh Pourian
+1.1.0   refactored  Kianosh Pourian
 
 
 
@@ -81,4 +85,3 @@ jQuery-MyModal-Plugin
 =====================
 
 New plugin for jQuery to open a modal box and also an alert box. 
->>>>>>> 7c2701583348414c38b6d118c2d96e1b19b689ab
