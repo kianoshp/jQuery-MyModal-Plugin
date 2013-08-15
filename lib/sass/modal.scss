@@ -3,6 +3,7 @@
    Description: Styles to contain the modal box information
    ======================================================================== */
 @import "mixins";
+@import "grid";
 
 // Fonts
 $font-family: Verdana, Arial, Sans serif;
@@ -20,9 +21,6 @@ $screen-color: rgba(red($gray), green($gray), blue($gray), ($screen-opacity/100)
 	top: 50%;
 	left: 50%;
 	@include translate(-50%, -50%);
-	// display: table-cell;
-	// vertical-align: middle;	
-	// text-align: center;
 }
 
 .overlay-screen {
@@ -52,14 +50,26 @@ $screen-color: rgba(red($gray), green($gray), blue($gray), ($screen-opacity/100)
 	@extend %vertical-center;
 	font-size: $font-size;
 	background-color: white;
-	//margin: 0 auto;
 	min-width: 200px;
 	min-height: 100px;
 	z-index: $screen-zindex + 1;
+	@include animation($property: duration, $property-value: 2s);
+	@include animation($property: name, $property-value: appear);
+	@include animation($property: timing-function, $property-value: ease-out);
+}
+
+@include keyframes ($animation-name: appear) {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .modal-shadow {
-	@include box-shadow;
+	@include box-shadow($hOffset: 3px, $vOffset: 3px, $blur: 2px, $color: lighten($gray, 5%));
 }
 
 .modal-border {

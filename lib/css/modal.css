@@ -38,12 +38,64 @@
   min-width: 200px;
   min-height: 100px;
   z-index: 5001;
+  -webkit-animation-duration: 2s;
+  -moz-animation-property: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: appear;
+  -moz-animation-property: appear;
+  -o-animation-name: appear;
+  animation-name: appear;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-property: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-shadow {
-  -moz-box-shadow: 0 0 0 0 #cccccc;
-  -webkit-box-shadow: 0 0 0 0 #cccccc;
-  box-shadow: 0 0 0 0 #cccccc;
+  -webkit-box-shadow: 3px 3px 2px 0 #8d8d8d;
+  -moz-box-shadow: 3px 3px 2px 0 #8d8d8d;
+  box-shadow: 3px 3px 2px 0 #8d8d8d;
 }
 
 .modal-border {
