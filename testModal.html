@@ -8,27 +8,33 @@
 <form id="testForm">
 	<input type="button" value="showModal" id="showModalBtn"/>
 </form>
-<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script-->
 <script src="lib/js/vendor/jquery-2.0.3.js" type="text/javascript"></script>
 <script src="lib/js/jquery.lightModal.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-/*		$('#testBody').modal({
-			'height': 400,
-			'width': 600,
-			'showSpinner': false,
-			'animateModal': false //defaulted to true, if animation is wanted remove this line or set to true
-		});
-*/		$('#showModalBtn').bind('click', function(e){
+
+		$('#showModalBtn').bind('click', function(e){
 			e.preventDefault();
-			$('#testBody').lightModal();
+			var modalContent = $('<section />', {
+				'class': 'modal-content modal-border'
+				, text: 'Modal content will go here'
+				, html: '<section>Modal content will go here</section>'
+			});
+			$('#testBody').lightModal({
+				content: modalContent
+				, height: 'auto'
+				, width: 'auto'
+			});
 		});
+
+		/* Another way to close the modal box is to add a click 
+		   event on the close button
+		*/
+		// $('#testBody').on('click', '.modal-close', function() {
+		// 	$(this).lightModal('clearModal');
+		// });
+		
 	});
-	
-	/*
-	to add content within the modal box, make the proper AJAX call get the contents and then call the following:
-	$('#modalBox').modal('updateContent', data);
-	*/
 	
 </script>
 </body>

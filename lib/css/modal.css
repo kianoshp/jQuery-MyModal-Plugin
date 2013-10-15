@@ -2,6 +2,9 @@
    Author: Kianosh Pourian
    Description: Styles to contain the modal box information
    ======================================================================== */
+body {
+  font-family: Verdana, Arial, Sans serif; }
+
 .spinner-block, .modal-block {
   position: absolute;
   top: 50%;
@@ -10,8 +13,7 @@
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
 .overlay-screen {
   position: absolute;
@@ -21,16 +23,14 @@
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
-}
+  left: 0; }
 
 .modal-container {
   display: table;
   width: 100%;
   height: 100%;
   z-index: 5001;
-  position: relative;
-}
+  position: relative; }
 
 .modal-block {
   font-size: 12px;
@@ -49,64 +49,62 @@
   -webkit-animation-timing-function: ease-out;
   -moz-animation-property: ease-out;
   -o-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
+  animation-timing-function: ease-out; }
 
 @-webkit-keyframes appear {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
 
   to {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 @-moz-keyframes appear {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
 
   to {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 @-o-keyframes appear {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
 
   to {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 @keyframes appear {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
 
   to {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 .modal-shadow {
   -webkit-box-shadow: 3px 3px 2px 0 #8d8d8d;
   -moz-box-shadow: 3px 3px 2px 0 #8d8d8d;
-  box-shadow: 3px 3px 2px 0 #8d8d8d;
-}
+  box-shadow: 3px 3px 2px 0 #8d8d8d; }
 
 .modal-border {
-  border: 1px solid #676767;
-}
+  border: 1px solid #676767; }
+
+.modal-content {
+  position: relative;
+  height: 500px;
+  width: 750px;
+  padding: 10px; }
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: url("../images/close.png") no-repeat center center;
+  z-index: 100000; }
+  .modal-close:hover {
+    cursor: hand;
+    cursor: pointer; }
 
 .vertical-offset {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5001;
-}
+  z-index: 5001; }
 
 /* ==|== End modal styles ================================================= */

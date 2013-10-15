@@ -16,6 +16,10 @@ $screen-zindex: 5000 !default;
 $screen-opacity: 60 !default;
 $screen-color: rgba(red($gray), green($gray), blue($gray), ($screen-opacity/100)) !default;
 
+body {
+	font-family: $font-family;
+}
+
 %vertical-center {
 	position: absolute;
 	top: 50%;
@@ -74,6 +78,26 @@ $screen-color: rgba(red($gray), green($gray), blue($gray), ($screen-opacity/100)
 
 .modal-border {
 	@include add-border($border-color: darken($gray, 10%));
+}
+
+.modal-content {
+	position: relative;
+	height: 500px;
+	width: 750px;
+	padding: 10px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	background: url('../images/close.png') no-repeat center center;
+	z-index: 100000;
+	&:hover {
+		@include hand-cursor;
+	}
 }
 
 .vertical-offset {
